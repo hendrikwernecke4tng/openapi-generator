@@ -1,0 +1,8 @@
+language: php
+# Bionic environment has preinstalled PHP 8.0
+# https://docs.travis-ci.com/user/reference/bionic/#php-support
+dist: bionic
+php:
+    - 8.0
+before_install: "composer install"
+script: "vendor/bin/phpunit"

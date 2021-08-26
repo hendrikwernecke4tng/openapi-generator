@@ -89,6 +89,7 @@ org.openapitools.codegen.languages.PlantumlDocumentationCodegen
 org.openapitools.codegen.languages.PerlClientCodegen
 org.openapitools.codegen.languages.PhpClientCodegen
 org.openapitools.codegen.languages.Php74ClientCodegen
+org.openapitools.codegen.languages.Php8ClientCodegen
 org.openapitools.codegen.languages.PhpLaravelServerCodegen
 org.openapitools.codegen.languages.PhpLumenServerCodegen
 org.openapitools.codegen.languages.PhpSlimServerCodegen
