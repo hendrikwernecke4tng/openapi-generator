@@ -1,0 +1,52 @@
+{
+    {{#composerPackageName}}
+    "name": "{{composerPackageName}}",
+    {{/composerPackageName}}
+    {{#artifactVersion}}
+    "version": "{{artifactVersion}}",
+    {{/artifactVersion}}
+    "description": "{{{appDescription}}}",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "OpenAPI-Generator contributors",
+            "homepage": "https://openapi-generator.tech"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "^3.6.0",
+        "friendsofphp/php-cs-fixer": "^v2.19.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{escapedInvokerPackage}}\\" : "{{srcBasePath}}/"
+        },
+        "classmap": [
+            "{{srcBasePath}}/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "{{escapedInvokerPackage}}\\" : "{{testBasePath}}/"
+        }
+    }
+}

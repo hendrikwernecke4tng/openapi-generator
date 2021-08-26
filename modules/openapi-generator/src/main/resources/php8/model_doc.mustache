@@ -1,0 +1,9 @@
+# {{#models}}{{#model}}{{classname}}
+{{#isEnum}}{{>enum_outer_doc}}{{/isEnum}}{{^isEnum}}
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+{{#vars}}**{{name}}** | {{^isContainer}}{{#isModel}}[**{{#vendorExtensions}}{{{docType}}}{{/vendorExtensions}}**]({{baseType}}.md){{/isModel}}{{^isModel}}**{{#vendorExtensions}}{{{docType}}}{{/vendorExtensions}}**{{/isModel}}{{/isContainer}}{{#isContainer}}{{#mostInnerItems}}{{#isModel}}[{{/isModel}}{{/mostInnerItems}}**{{#vendorExtensions}}{{{docType}}}{{/vendorExtensions}}**{{#mostInnerItems}}{{#isModel}}]({{baseType}}.md){{/isModel}}{{/mostInnerItems}}{{/isContainer}} | {{description}} |{{^required}} [optional]{{/required}}{{#isReadOnly}} [readonly]{{/isReadOnly}}{{#defaultValue}} [default to {{{.}}}]{{/defaultValue}}
+{{/vars}}{{/isEnum}}
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#api-endpoints) [[Back to README]](../../README.md){{/model}}{{/models}}
