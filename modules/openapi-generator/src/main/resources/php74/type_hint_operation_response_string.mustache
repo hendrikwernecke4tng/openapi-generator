@@ -1,0 +1,1 @@
+{{#dataType}}{{#containerType}}'array{{#isNullable}}|null{{/isNullable}}'{{/containerType}}{{^containerType}}{{#primitiveType}}'{{{dataType}}}'{{/primitiveType}}{{^primitiveType}}{{#isModel}}{{{baseType}}}::class{{/isModel}}{{^isModel}}'{{{dataType}}}'{{/isModel}}{{/primitiveType}}{{/containerType}}{{/dataType}}
