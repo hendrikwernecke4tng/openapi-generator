@@ -1,0 +1,46 @@
+{
+    "description": "This spec is mainly for testing Petstore server and contains fake endpoints, models. Please do not use this for any other purpose. Special characters: \" \\",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "OpenAPI-Generator contributors",
+            "homepage": "https://openapi-generator.tech"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "^3.6.0",
+        "friendsofphp/php-cs-fixer": "^v2.19.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenAPI\\Client\\" : "lib/"
+        },
+        "classmap": [
+            "lib/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenAPI\\Client\\" : "test/"
+        }
+    }
+}
